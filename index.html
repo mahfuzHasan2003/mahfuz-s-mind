@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap');
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+         color: #fff;
+      }
+      .container{
+         height: 100vh;
+         background-color: #264653;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+      }
+      .log-in-form{
+         width: 80%;
+         max-width: 450px;
+         background-color: #1a3d4b;
+         padding: 20px 15px;
+         padding-top: 62px;
+         position: relative;
+         border-radius: 10px 0;
+      }
+      .user-logo{
+         position: absolute;
+         top: -50px; left: 50%;
+         transform: translateX(-50%);
+         /* background-color: #1a3d4b; */
+      }
+      .user-logo img{
+         height: 100px;
+         border-radius: 50%;
+         border: 3px solid #1a3d4b;
+         outline: 0.5px solid yellowgreen;
+      }
+      .input-group{
+         width: 100%;
+         margin-bottom: 15px;
+         position: relative;
+      }
+      .input-group input{
+         width: 100%;
+         padding: 10px 12px;
+         background: transparent;
+         outline: none;
+         font-size: 18px;
+         border: 1.5px solid #25273d;
+         border-radius: 10px 0;
+      }
+      .input-group span{
+         font-size: 18px;
+         padding: 10px 12px;
+         position: absolute;
+         left: 0;
+         pointer-events: none;
+         transition: all 0.3s;
+      }
+      .input-group input:focus, .input-group input:valid{
+         border: 1px solid yellowgreen;
+      }
+      .input-group input:focus ~ span, .input-group input:valid ~ span{
+         font-size: 12px;
+         left: 25px;
+         top: -6px;
+         background-color: #1a3d4b;
+         color: yellowgreen;
+         padding: 0 10px;
+         border-left: 1px solid yellowgreen;
+         border-right: 1px solid yellowgreen;
+      }
+      .submit input{
+         width: 100%;
+         padding: 10px 12px;
+         border-radius: 10px 0;
+         outline: none;
+         border: none;
+         background-color: yellowgreen;
+         font-size: 18px;
+         color: #1a3d4b;
+         font-weight: 600;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="log-in-form">
+         <div class="title">
+            <h2 style="text-align: center; margin-bottom: 10px;">Log In to <span style="color: yellowgreen;">Mahfuz's Mind</span></h2>
+         </div>
+         <div class="user-logo">
+            <img src="Images/mahfuz.jpg">
+         </div>
+         <div class="input-group">
+            <input type="text" required>
+            <span>Username or Email</span>
+         </div>
+         <div class="input-group">
+            <input type="password" required>
+            <span>Password</span>
+         </div>
+         <div class="submit">
+            <input type="submit" value="Let's Log In" onclick="alert('Thanks Mam! Ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhh🥺😘')">
+         </div>
+      </div>
+   </div>
+   
+   <!-- <script src = "js/script.js"> </script> -->
+</html>
